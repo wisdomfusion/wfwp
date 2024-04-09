@@ -1,0 +1,46 @@
+<!-- wp:template-part {"slug": "header", "tagName": "header"} /-->
+
+<div class="main-container">
+
+    <div class="current-position">
+        <!-- wp:pattern {"slug": "orgcms/current-position"} /-->
+    </div>
+
+    <div class="cate-container">
+
+        <div class="cate-box two-col">
+            <aside>
+                <!-- wp:pattern {"slug": "orgcms/category-sidebar"} /-->
+            </aside>
+
+            <div class="cate-posts">
+                <!-- wp:query {"query":{"perPage":2,"pages":0,"offset":"0","postType":"post","order":"desc","orderBy":"date","inherit":true}} -->
+                    <!-- wp:query-no-results -->
+                    暂无内容
+                    <!-- /wp:query-no-results -->
+
+                    <!-- wp:post-template {} -->
+                    <!-- wp:post-title {"isLink":true} /-->
+                    <!-- wp:post-date {"format":"Y-m-d"} /-->
+                    <!-- /wp:post-template -->
+
+                    <div class="pager">
+                        <!-- wp:query-pagination {"layout":{"type":"flex","justifyContent":"flex-start"}} -->
+                        <!-- wp:query-pagination-previous {"label":"上一页"} /-->
+                        <!-- wp:query-pagination-numbers /-->
+                        <!-- wp:query-pagination-next {"label":"下一页"} /-->
+                        <!-- /wp:query-pagination -->
+                    </div>
+                <!-- /wp:query -->
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+<!-- wp:template-part {"slug": "footer", "tagName": "footer"} /-->
