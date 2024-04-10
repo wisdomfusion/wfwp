@@ -155,8 +155,9 @@ header {
     bottom: 0;
     color: white;
     font-size: 18px;
+    font-weight: 600;
     text-align: center;
-    padding: 10px 0 40px;
+    padding: 10px 0 50px;
     background: rgba(0, 0, 0, .3);
 }
 .home-slides.swiper .swiper-pagination {
@@ -167,7 +168,7 @@ header {
     width: 100%;
     height: 40px;
     right: 0;
-    bottom: 0;
+    bottom: 10px;
 }
 .home-slides.swiper .swiper-pagination .swiper-pagination-bullet {
     display: inline-block;
@@ -175,9 +176,28 @@ header {
     height: 8px;
     background-color: var(--main-fg-color-lightest);
     border-radius: 8px;
+    opacity: 0.5;
 }
 .home-slides.swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
     width: 32px;
+    opacity: 1;
+}
+.home-slides.swiper .swiper-button-prev,
+.home-slides.swiper .swiper-button-next {
+    color: white;
+    background: rgba(87, 35, 216, 0.5);
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+}
+.home-slides.swiper .swiper-button-prev:hover,
+.home-slides.swiper .swiper-button-next:hover {
+    background: rgba(87, 35, 216, 1);
+}
+.home-slides.swiper .swiper-button-prev::after,
+.home-slides.swiper .swiper-button-next::after {
+    font-size: 24px;
 }
 
 .current-position {
@@ -624,7 +644,7 @@ section.section-container .section-box {
 .two-col > article {
     /*flex: 1;*/
     width: 908px;
-    min-height: 400px;
+    min-height: 500px;
     line-height: 1.5em;
     font-size: 16px;
     color: #333;
@@ -663,7 +683,7 @@ section.section-container .section-box {
     font-size: 16px;
     color: #333;
     margin-bottom: 30px;
-    min-height: 400px;
+    min-height: 500px;
 }
 .two-col > .cate-posts li.wp-block-post {
     display: flex;
