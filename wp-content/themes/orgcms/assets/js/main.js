@@ -14,9 +14,9 @@ $(function () {
     const swiper = new Swiper('.home-slides.swiper', {
         speed: 400,
         effect: 'fade',
-        // autoplay: {
-        //     delay: 5000,
-        // },
+        autoplay: {
+            delay: 5000,
+        },
         loop: true,
         pagination: {
             el: '.home-slides.swiper .swiper-pagination',

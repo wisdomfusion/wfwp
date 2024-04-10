@@ -397,9 +397,11 @@ section.section-container .section-box {
     height: 8px;
     background-color: white;
     border-radius: 0;
+    opacity: 0.5;
 }
 .home-news .featured-news-list.swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
     background-color: var(--main-fg-color-lighter);
+    opacity: 1;
 }
 .home-news .latest-news-list {
     position: relative;
