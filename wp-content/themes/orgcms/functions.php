@@ -8,6 +8,7 @@
  * @since orgcms 1.0
  */
 
+// 更改摘要长度限制
 function custom_excerpt_length($length)
 {
     return 100;

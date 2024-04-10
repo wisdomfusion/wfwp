@@ -139,6 +139,46 @@ header {
 .home-banner {
 
 }
+.home-slides.swiper .swiper-wrapper {
+}
+.home-slides.swiper .swiper-wrapper .swiper-slide {
+    position: relative;
+}
+.home-slides.swiper .swiper-wrapper .swiper-slide a {
+    display: block;
+    position: relative;
+}
+.home-slides.swiper .swiper-wrapper .swiper-slide p {
+    display: block;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px 0 40px;
+    background: rgba(0, 0, 0, .3);
+}
+.home-slides.swiper .swiper-pagination {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    right: 0;
+    bottom: 0;
+}
+.home-slides.swiper .swiper-pagination .swiper-pagination-bullet {
+    display: inline-block;
+    width: 16px;
+    height: 8px;
+    background-color: var(--main-fg-color-lightest);
+    border-radius: 8px;
+}
+.home-slides.swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    width: 32px;
+}
 
 .current-position {
     width: 1200px;
@@ -271,6 +311,75 @@ section.section-container .section-box {
     height: 270px;
     background-color: #F4F4F4;
     margin-right: 32px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.home-news .featured-news-list.swiper {
+    position: relative;
+}
+.home-news .featured-news-list.swiper .swiper-slide {
+}
+.home-news .featured-news-list.swiper .swiper-slide a {
+    position: relative;
+    display: block;
+    width: 480px;
+    height: 270px;
+}
+.home-news .featured-news-list.swiper .swiper-slide a img {
+    position: absolute;
+    width: 480px;
+    height: 270px;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+.home-news .featured-news-list.swiper .swiper-slide a .text-box {
+    position: absolute;
+    width: 480px;
+    height: 40px;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .2);
+    z-index: 2;
+}
+.home-news .featured-news-list.swiper .swiper-slide a p {
+    position: absolute;
+    width: 300px;
+    height: 24px;
+    left: 10px;
+    bottom: 0;
+    color: #F2F2F2;
+    margin-bottom: 8px;
+    word-break: break-all;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    z-index: 3;
+}
+.home-news .featured-news-list.swiper .swiper-slide a:hover p {
+    color: white;
+}
+.home-news .featured-news-list.swiper .swiper-pagination {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    left: auto;
+    right: 0;
+    bottom: 0;
+    padding-right: 10px;
+}
+.home-news .featured-news-list.swiper .swiper-pagination .swiper-pagination-bullet {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    border-radius: 0;
+}
+.home-news .featured-news-list.swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: var(--main-fg-color-lighter);
 }
 .home-news .latest-news-list {
     position: relative;
@@ -317,6 +426,11 @@ section.section-container .section-box {
     text-align: right;
     color: #888;
     font-size: 14px;
+}
+.home-news .featured-news-list.no-news {
+    line-height: 270px;
+    text-align: center;
+    color: #888;
 }
 
 /*实验室介绍*/

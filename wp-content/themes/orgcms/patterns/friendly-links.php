@@ -3,9 +3,7 @@
  * Title: Friendly Links
  * Slug: orgcms/friendly-links
  */
-?>
 
-<?php
 $args = array(
     'post_type' => 'friendly-links',
     'posts_per_page' => -1,

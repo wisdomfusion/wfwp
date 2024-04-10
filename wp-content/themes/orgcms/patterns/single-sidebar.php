@@ -3,9 +3,7 @@
  * Title: Category's Sidebar
  * Slug: orgcms/single-sidebar
  */
-?>
 
-<?php
 if (is_single()) {
     $the_post = get_queried_object();
 ?>

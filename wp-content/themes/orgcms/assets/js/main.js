@@ -11,17 +11,34 @@ $(function () {
     });
 
     // 首页 banner 轮播
-    const swiper = new Swiper('.swiper', {
+    const swiper = new Swiper('.home-slides.swiper', {
         speed: 400,
         effect: 'fade',
         autoplay: {
             delay: 5000,
         },
         loop: true,
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+        pagination: {
+            el: '.home-slides.swiper .swiper-pagination',
+            clickable: true,
         },
+        navigation: {
+            nextEl: '.home-slides.swiper .swiper-button-next',
+            prevEl: '.home-slides.swiper .swiper-button-prev',
+        },
+    });
+
+    const imgNewsSwiper = new Swiper('.featured-news-list.swiper', {
+        speed: 400,
+        effect: 'fade',
+        autoplay: {
+            delay: 5000,
+        },
+        loop: true,
+        pagination: {
+            el: '.featured-news-list.swiper .swiper-pagination',
+            clickable: true,
+        }
     });
 
     // 首页-研究方向
