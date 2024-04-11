@@ -9,7 +9,7 @@
 $args = array(
     'post_type' => 'slides',
     'category_name' => 'home-slides',
-    'posts_per_page' => -1,
+    'posts_per_page' => 5,
     'orderby' => 'date',
     'order' => 'DESC',
 );

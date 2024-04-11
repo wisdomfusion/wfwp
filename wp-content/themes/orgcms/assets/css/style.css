@@ -143,6 +143,7 @@ header {
 }
 .home-slides.swiper .swiper-wrapper .swiper-slide {
     position: relative;
+    text-align: center;
 }
 .home-slides.swiper .swiper-wrapper .swiper-slide a {
     display: block;
