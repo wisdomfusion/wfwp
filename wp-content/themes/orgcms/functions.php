@@ -18,7 +18,7 @@ add_filter('excerpt_length', 'custom_excerpt_length', 999);
 
 function enqueue_my_stylesheets()
 {
-    wp_enqueue_style('swiper', 'https://cdn.bootcdn.net/ajax/libs/Swiper/9.4.1/swiper-bundle.css');
+    wp_enqueue_style('swiper', get_template_directory_uri() . '/assets/swiper/swiper-bundle.min.css');
     wp_enqueue_style('my_styles', get_template_directory_uri() . '/assets/css/style.css');
 }
 
@@ -27,7 +27,7 @@ add_action('wp_enqueue_scripts', 'enqueue_my_stylesheets');
 function enqueue_my_scripts()
 {
     wp_enqueue_script('jq', get_template_directory_uri() . '/assets/js/jquery-3.7.1.min.js');
-    wp_enqueue_script('swiper', 'https://cdn.bootcdn.net/ajax/libs/Swiper/9.4.1/swiper-bundle.js');
+    wp_enqueue_script('swiper', get_template_directory_uri() . '/assets/swiper/swiper-bundle.min.js');
     wp_enqueue_script('my_scripts', get_template_directory_uri() . '/assets/js/main.js');
 }
 

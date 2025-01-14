@@ -16,21 +16,67 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
     --main-fg-color-lightest: #9A7BE8;
     --main-fg-color-darker: #361880;
 }
-* {
+
+:root :where(.is-layout-flow) > * {
     margin-block-start: 0;
     margin-block-end: 0;
 }
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
 a {
     color: var(--main-fg-color);
     text-decoration: none;
 }
 a:hover {
     color: var(--main-fg-color-lighter);
-}
-
-:where(.wp-site-blocks) > * {
-    margin-block-start: 0 !important;
-    margin-block-end: 0 !important;
 }
 
 header {
@@ -98,6 +144,10 @@ header {
     background: rgba(255, 255, 255, 0.1);
 }
 
+.main-nav-bar .main-menu > .menu-item.has-children {
+    cursor: default;
+}
+
 .main-nav-bar .main-menu .sub-menu {
     display: none;
     position: absolute;
@@ -137,7 +187,7 @@ header {
 }
 
 .home-banner {
-
+    /*height: 450px;*/
 }
 .home-slides.swiper .swiper-wrapper {
 }
@@ -663,6 +713,7 @@ section.section-container .section-box {
 .two-col > article p {
     margin-bottom: 1em;
     text-indent: 2em;
+    font-size: 18px;
 }
 .two-col > article p.no-indent {
     text-indent: 0;
@@ -670,10 +721,16 @@ section.section-container .section-box {
 .two-col > article img {
     display: block;
     max-width: 100%;
+    height: auto;
     margin: .5em auto;
 }
+.two-col > article ul {
+    list-style: disc;
+    font-size: 18px;
+    margin-left: 2em;
+}
 .two-col > article .wp-block-post-date {
-    font-size: 14px;
+    font-size: 16px;
     color: #888;
     text-align: center;
     margin-bottom: 30px;
@@ -690,6 +747,7 @@ section.section-container .section-box {
 }
 .two-col > .cate-posts li.wp-block-post {
     display: flex;
+    margin: 0;
     padding: 10px;
     border-top: 1px solid #EEE;
 }
